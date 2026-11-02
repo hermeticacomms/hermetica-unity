@@ -1,0 +1,14 @@
+{
+  "name": "com.hermeticacomms.hermetica",
+  "version": "0.1.0",
+  "displayName": "Hermetica",
+  "description": "Hermetica for Unity games and apps: events, identity, consent, push tokens and in-app messages, with an offline queue and idempotent retries.",
+  "unity": "2021.3",
+  "license": "MIT",
+  "author": { "name": "Hermetica", "url": "https://github.com/hermeticacomms" },
+  "repository": { "type": "git", "url": "https://github.com/hermeticacomms/hermetica-unity.git" },
+  "keywords": ["analytics", "push", "in-app", "marketing"],
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
+  }
+}

@@ -1,0 +1,18 @@
+name: ci
+on:
+  push: { branches: [main] }
+  pull_request:
+permissions: { contents: read }
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-dotnet@v5
+        with: { dotnet-version: '10.0.x' }
+      # The shared core (Runtime/Core) as C# 9, the language Unity compiles. The UnityEngine layer needs a licensed editor.
+      - run: dotnet test Tests~/Hermetica.Unity.Tests.csproj -c Release
+      - name: Every asset has a .meta file (Unity ignores files without one in an installed package)
+        run: |
+          missing=$(find . -mindepth 1 -not -path './.*' -not -path './Tests~*' -not -name '*.meta' | while read -r f; do [ -f "$f.meta" ] || echo "$f"; done)
+          [ -z "$missing" ] || { echo "missing .meta: $missing"; exit 1; }
