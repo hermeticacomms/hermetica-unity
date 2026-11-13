@@ -40,7 +40,7 @@ namespace Hermetica.Mobile
     {
         /// <summary>ios or android: which in-app messages to fetch and the push token's platform.</summary>
         public string Platform { get; set; } = "android";
-        public string SdkVersion { get; set; } = "dotnet-mobile-0.1.0";
+        public string SdkVersion { get; set; } = "dotnet-mobile-0.4.0";
         public DeviceMetadata Device { get; set; } = new DeviceMetadata();
         public int BatchSize { get; set; } = 20;
         public TimeSpan FlushInterval { get; set; } = TimeSpan.FromSeconds(2);

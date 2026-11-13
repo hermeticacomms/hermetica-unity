@@ -5,7 +5,7 @@ queued on the device, sent in batches, retried with backoff using one `Idempoten
 flushed when the app is paused.
 
 Install with the Package Manager: **Add package from git URL** →
-`https://github.com/hermeticacomms/hermetica-unity.git#v0.1.0`
+`https://github.com/hermeticacomms/hermetica-unity.git#v0.4.0`
 
 ```csharp
 using Hermetica.Unity;

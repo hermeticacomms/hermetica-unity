@@ -60,7 +60,7 @@ namespace Hermetica.Unity
             var o = new HermeticaOptions
             {
                 Platform = ios ? "ios" : "android",
-                SdkVersion = "unity-0.1.0",
+                SdkVersion = "unity-0.4.0",
                 Device = new DeviceMetadata
                 {
                     DeviceModel = SystemInfo.deviceModel, OsName = ios ? "ios" : Application.platform == RuntimePlatform.Android ? "android" : Application.platform.ToString(),

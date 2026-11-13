@@ -1,6 +1,6 @@
 {
   "name": "com.hermeticacomms.hermetica",
-  "version": "0.1.0",
+  "version": "0.4.0",
   "displayName": "Hermetica",
   "description": "Hermetica for Unity games and apps: events, identity, consent, push tokens and in-app messages, with an offline queue and idempotent retries.",
   "unity": "2021.3",
